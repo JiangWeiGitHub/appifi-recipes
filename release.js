@@ -16,6 +16,7 @@ module.exports = [
         config: {
           HostConfig: {
             Binds: ["/data:/data","/mongodb:/mongodb","/var/log/supervisor:/var/log/supervisor"],
+            // log files path: /run/wisnuc/volumes/'volume's uuid'/wisnuc/appdata/dockerhub/wisnuc/fruitmix/latest/vanilla/var/log/supervisor
             RestartPolicy: {
               Name: 'unless-stopped'
             },
